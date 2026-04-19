@@ -1,0 +1,15 @@
+{
+  "fields": {
+    "Label": "string",
+    "Origin": "Point"
+  },
+  "gob_type": "NestedStruct",
+  "type": "struct",
+  "value": {
+    "Label": "test",
+    "Origin": {
+      "X": 1,
+      "Y": 2
+    }
+  }
+}

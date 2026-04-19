@@ -1,0 +1,12 @@
+{
+  "elem_gob_type": "Point",
+  "elem_type": "struct",
+  "key_type": "string",
+  "type": "map",
+  "value": {
+    "a": {
+      "X": 1,
+      "Y": 2
+    }
+  }
+}

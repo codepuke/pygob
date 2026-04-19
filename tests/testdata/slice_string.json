@@ -1,0 +1,9 @@
+{
+  "elem_type": "string",
+  "type": "slice",
+  "value": [
+    "a",
+    "b",
+    "c"
+  ]
+}

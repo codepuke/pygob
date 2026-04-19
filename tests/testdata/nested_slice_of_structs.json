@@ -1,0 +1,15 @@
+{
+  "elem_gob_type": "Point",
+  "elem_type": "struct",
+  "type": "slice",
+  "value": [
+    {
+      "X": 1,
+      "Y": 2
+    },
+    {
+      "X": 3,
+      "Y": 4
+    }
+  ]
+}

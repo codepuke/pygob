@@ -1,0 +1,16 @@
+{
+  "fields": {
+    "Name": "string",
+    "Value": "interface"
+  },
+  "gob_type": "Container",
+  "type": "struct",
+  "value": {
+    "Name": "test",
+    "Value": {
+      "X": 1,
+      "Y": 2,
+      "gob_type": "Point"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "elem_type": "string",
+  "key_type": "int",
+  "type": "map",
+  "value": {
+    "1": "one",
+    "2": "two"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "fields": {
+    "Active": "bool",
+    "Age": "int",
+    "Name": "string",
+    "Score": "float"
+  },
+  "gob_type": "MixedStruct",
+  "type": "struct",
+  "value": {
+    "Active": true,
+    "Age": 30,
+    "Name": "Alice",
+    "Score": 9.5
+  }
+}

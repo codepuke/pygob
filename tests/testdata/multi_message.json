@@ -1,0 +1,26 @@
+[
+  {
+    "fields": {
+      "X": "int",
+      "Y": "int"
+    },
+    "gob_type": "Point",
+    "type": "struct",
+    "value": {
+      "X": 1,
+      "Y": 2
+    }
+  },
+  {
+    "fields": {
+      "X": "int",
+      "Y": "int"
+    },
+    "gob_type": "Point",
+    "type": "struct",
+    "value": {
+      "X": 3,
+      "Y": 4
+    }
+  }
+]

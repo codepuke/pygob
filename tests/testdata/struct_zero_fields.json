@@ -1,0 +1,14 @@
+{
+  "fields": {
+    "Extra": "float",
+    "Name": "string",
+    "Value": "int"
+  },
+  "gob_type": "PartialStruct",
+  "type": "struct",
+  "value": {
+    "Extra": 0,
+    "Name": "Bob",
+    "Value": 0
+  }
+}
