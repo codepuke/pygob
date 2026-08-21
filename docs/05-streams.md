@@ -28,7 +28,7 @@ against a Go-generated file is only meaningful for scalars.
 `decode()` raises `GobDecodeError` when there is nothing left to read, so a
 read-everything loop is a `try`/`except`:
 
-:::examples decode-stream-until-eof
+:::examples end-of-stream
 
 Any file-like object works — a real file, a socket wrapped in a file object, or a
 `BytesIO`. `Decoder` reads only as far as each message requires, so it can be

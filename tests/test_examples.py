@@ -250,7 +250,7 @@ def test_stream_multiple_values():
     assert len(buf.getvalue()) < 2 * len(standalone)
 
 
-def test_decode_stream_until_eof():
+def test_end_of_stream():
     """decode() raises GobDecodeError once the stream is exhausted."""
     schema = Schema("Point", X=GOB_INT, Y=GOB_INT)
     buf = io.BytesIO()
@@ -259,7 +259,7 @@ def test_decode_stream_until_eof():
     enc.encode({"X": 44, "Y": 55}, schema=schema)
     buf.seek(0)
 
-    # snippet:start decode-stream-until-eof
+    # snippet:start end-of-stream
     dec = Decoder(buf)
     records = []
     try:
@@ -278,9 +278,9 @@ def test_decode_stream_until_eof():
 # ---------------------------------------------------------------------------
 
 
-def test_interface_value():
+def test_interface_values():
     """Encoding into an interface field needs the concrete type's Go name."""
-    # snippet:start interface-value
+    # snippet:start interface-values
     PointSchema = Schema("Point", X=GOB_INT, Y=GOB_INT)
     ContainerSchema = Schema("Container", Name=GOB_STRING, Value=GOB_INTERFACE)
 

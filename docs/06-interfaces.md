@@ -28,7 +28,7 @@ Encoding is the direction that needs help, because pygob has to write a Go type
 name it cannot otherwise know. Register it against the concrete type's schema,
 using the fully-qualified Go name (`main.Point`, not `Point`).
 
-:::examples interface-value
+:::examples interface-values
 
 Use `GOB_INTERFACE` as the field type in the containing schema.
 
