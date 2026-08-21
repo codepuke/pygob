@@ -50,6 +50,12 @@ enc.encode_gob_encoded(datetime(2009, 11, 10, 23, 0, 0, tzinfo=timezone.utc), "T
 enc.encode_gob_encoded(uuid.UUID("6ba7b810-9dad-11d1-80b4-00c04fd430c8"), "UUID")
 ```
 
+The full round trip for each built-in codec:
+
+:::examples time-values
+
+:::examples uuid-values
+
 ### Custom codecs
 
 Any marshaler type can be given a codec. Pass them at construction, or register
@@ -77,6 +83,11 @@ with open("scalar_time.gob", "rb") as f:
     dec.register_codec("Time", decode_time)
     t = dec.decode()
 ```
+
+A complete both-sides example, bridging a Go `type Celsius float64` whose
+marshaler writes eight big-endian IEEE-754 bytes:
+
+:::examples custom-marshaler
 
 ## Named primitive types
 
@@ -106,6 +117,8 @@ register_semantic_type(Status, GOB_STATUS)
 UserSchema = Schema("User", Name=GOB_STRING, Status=GOB_STATUS)
 data = encode({"Name": "alice", "Status": Status.active}, schema=UserSchema)
 ```
+
+:::examples semantic-type
 
 `register_semantic_type` is what lets `@gobstruct` resolve the annotation:
 

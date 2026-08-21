@@ -47,7 +47,7 @@ PersonSchema = Schema(
 Attach a gob type name to a dataclass and pygob derives the schema from the type
 annotations.
 
-:::examples struct-from-class
+:::examples schema-type-inference
 
 Nested struct annotations resolve automatically, so a field annotated with
 another `@gobstruct` class needs no extra configuration:
